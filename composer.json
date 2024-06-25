@@ -2,6 +2,7 @@
     "name": "vonama/swiss-mods",
     "description": "Plenty of handy modules",
     "type": "library",
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "Vonama\\SwissMods\\": "src/"
