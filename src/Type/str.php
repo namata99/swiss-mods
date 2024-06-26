@@ -2,7 +2,12 @@
 
 namespace Vonama\SwissMods\Type;
 
-class str
+use ArrayIterator;
+use IteratorAggregate;
+use Stringable;
+use Traversable;
+
+final class str implements IteratorAggregate, Stringable
 {
     function __construct(
         private string $string,
@@ -11,6 +16,11 @@ class str
     function __toString(): string
     {
         return $this->string;
+    }
+
+    public function getIterator(): Traversable
+    {
+        return new ArrayIterator(str_split($this->string));
     }
 
     public function length(): int { return strlen($this->string); }
@@ -84,5 +94,11 @@ class str
     public function shuffle(): string
     {
         return str_shuffle($this->string);
+    }
+
+   
+    public function concat(...$strings): string
+    {
+        return $this->string . join('', $strings);
     }
 }
