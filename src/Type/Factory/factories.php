@@ -1,7 +1,7 @@
 <?php
 namespace Vonama\SwissMods\Type\Factory;
 
-use Vonama\SwissMods\Types\str;
+use Vonama\SwissMods\Type\str;
 
 function ss(string $string): str
 {

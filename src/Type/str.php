@@ -1,6 +1,6 @@
 <?php
 
-namespace Vonama\SwissMods\Types;
+namespace Vonama\SwissMods\Type;
 
 class str
 {

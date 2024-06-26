@@ -8,7 +8,7 @@
             "Vonama\\SwissMods\\": "src/"
         },
         "files": [
-            "src/Types/Factory/factories.php"
+            "src/Type/Factory/factories.php"
         ]
     },
     "require": {}
