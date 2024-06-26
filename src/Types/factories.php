@@ -1,11 +1,13 @@
 <?php
-namespace Vonama\SwissMods\Types\Factories;
+namespace Vonama\SwissMods\Types\Factory;
 use Vonama\SwissMods\Types\str;
 
-if (!function_exists('str')) 
+function ss(string $string): str
 {
-    function str(string $string): str
-    {
-        return new str($string);
-    }
+    return new str($string);
+}
+
+function str(string $string): str
+{
+    return new str($string);
 }
