@@ -7,7 +7,9 @@
         "psr-4": {
             "Vonama\\SwissMods\\": "src/"
         },
-        "files": ["src/Types/factories.php"]
+        "files": [
+            "src/Types/Factory/factories.php"
+        ]
     },
     "require": {}
 }
